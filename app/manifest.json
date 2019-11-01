@@ -1,64 +1,88 @@
 {
-    "manifest_version": 1,
-    "type": "WebApp",
-    "meta": {
-      "name": "Warapps",
-      "version": "1.0.0",
-      "minimum-overwolf-version": "0.120.0",
-      "author": "neuefische",
-      "icon": "IconMouseOver.png",
-      "icon_gray": "IconMouseNormal.png",
-      "launcher_icon": "desktop-icon.ico",
-      "description": "Warcraft app for new developers"
-    },
-    "permissions": [
-      "Hotkeys",
-      "GameInfo"
-    ],
-    "data": {
-      "game_targeting": {
-        "type": "dedicated",
-        "game_ids": [5426]
-      },
-      "launch_events": [
-        {
-          "event": "GameLaunch",
-          "event_data": {
-            "game_ids": [5426]
-          },
-          "start_minimized": true
-        }
-      ],
-      "start_window": "desktop",
-      "windows": {
-        "desktop": {
-          "file": "src/desktop.html",
-          "native_window": true,
-          "transparent": true,
-          "resizable": true,
-          "size": {
-            "width": 600,
-            "height": 400
-          },
-          "min_size": {
-            "width": 600,
-            "height": 400
-          },
-          "max_size": {
-            "width": 600,
-            "height": 400
-          },
-          "desktop_only": true
-        }
-      },
-      "block_top_window_navigation": true,
-      "popup_blocker": true,
-      "mute": true,
-      "force_browser": "user",
-      "developer": {
-        "enable_auto_refresh": true,
-        "reload_delay": 1000,
-        "filter": "*.*"
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "Warapps",
+    "version": "1.0.0",
+    "minimum-overwolf-version": "0.120.0",
+    "author": "neuefische",
+    "icon": "IconMouseOver.png",
+    "icon_gray": "IconMouseNormal.png",
+    "launcher_icon": "desktop-icon.ico",
+    "description": "Warcraft app for new developers"
+  },
+  "permissions": ["Hotkeys", "GameInfo"],
+  "data": {
+    "hotkeys": {
+      "show_hide": {
+        "title": "Show/Hide In-Game Window",
+        "action-type": "toggle",
+        "default": "Ctrl+G"
       }
+    },
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [5426]
+    },
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [5426]
+        },
+        "start_minimized": true
+      }
+    ],
+    "start_window": "desktop",
+    "windows": {
+      "desktop": {
+        "file": "src/desktop.html",
+        "native_window": true,
+        "transparent": true,
+        "resizable": true,
+        "size": {
+          "width": 600,
+          "height": 400
+        },
+        "min_size": {
+          "width": 600,
+          "height": 400
+        },
+        "max_size": {
+          "width": 600,
+          "height": 400
+        },
+        "desktop_only": true
+      },
+      "overlay": {
+        "file": "src/overlay.html",
+        "in_game_only": true,
+        "focus_game_takeover": "ReleaseOnHidden",
+        "focus_game_takeover_release_hotkey": "show_hide",
+        "transparent": true,
+        "resizable": true,
+        "size": {
+          "width": 600,
+          "height": 400
+        },
+        "min_size": {
+          "width": 600,
+          "height": 400
+        },
+        "max_size": {
+          "width": 600,
+          "height": 400
+        }
+      }
+    },
+    "block_top_window_navigation": true,
+    "popup_blocker": true,
+    "mute": true,
+    "force_browser": "user",
+    "developer": {
+      "enable_auto_refresh": true,
+      "reload_delay": 1000,
+      "filter": "*.*"
     }
   }
+}
