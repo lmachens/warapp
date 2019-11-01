@@ -1,14 +1,11 @@
 {
   "name": "warapp",
   "version": 2,
-  "routes": [
+  "builds": [
     {
-      "src": "/app/(.*)",
-      "dest": "/app/src/(.*)"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/storybook-static/(.*)"
+      "src": "build-storybook.sh",
+      "use": "@now/static-build",
+      "config": { "distDir": "storybook-static" }
     }
   ]
 }
