@@ -1,0 +1,64 @@
+{
+    "manifest_version": 1,
+    "type": "WebApp",
+    "meta": {
+      "name": "Warapp",
+      "version": "1.0.0",
+      "minimum-overwolf-version": "0.120.0",
+      "author": "neuefische",
+      "icon": "IconMouseOver.png",
+      "icon_gray": "IconMouseNormal.png",
+      "launcher_icon": "desktop-icon.ico",
+      "description": "Warcraft app for new developers"
+    },
+    "permissions": [
+      "Hotkeys",
+      "GameInfo"
+    ],
+    "data": {
+      "game_targeting": {
+        "type": "dedicated",
+        "game_ids": [5426]
+      },
+      "launch_events": [
+        {
+          "event": "GameLaunch",
+          "event_data": {
+            "game_ids": [5426]
+          },
+          "start_minimized": true
+        }
+      ],
+      "start_window": "desktop",
+      "windows": {
+        "desktop": {
+          "file": "windows/desktop.html",
+          "native_window": true,
+          "transparent": true,
+          "resizable": true,
+          "size": {
+            "width": 1212,
+            "height": 699
+          },
+          "min_size": {
+            "width": 1212,
+            "height": 699
+          },
+          "max_size": {
+            "width": 1212,
+            "height": 699
+          },
+          "desktop_only": true
+        }
+      },
+      "block_top_window_navigation": true,
+      "popup_blocker": true,
+      "mute": true,
+      "force_browser": "user",
+      "developer": {
+        "enable_auto_refresh": true,
+        "reload_delay": 1000,
+        "filter": "*.*"
+      }
+    }
+  }
