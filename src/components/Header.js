@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { CloseButton } from "./CloseButton";
+import CloseButton from "./buttons/CloseButton";
 import { dragMoveWindow } from "../api/windows";
 
 const HeaderStyled = styled.header`
