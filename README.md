@@ -1,0 +1,2 @@
+# warapp
+Overwolf starter app
