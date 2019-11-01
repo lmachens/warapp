@@ -1,0 +1,14 @@
+{
+  "name": "warapp",
+  "version": 2,
+  "routes": [
+    {
+      "src": "/app/(.*)",
+      "dest": "/app/src/(.*)"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/storybook-static/(.*)"
+    }
+  ]
+}

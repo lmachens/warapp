@@ -1,0 +1,9 @@
+{
+  "name": "warapp",
+  "scripts": {},
+  "env": {},
+  "formation": {},
+  "addons": [],
+  "buildpacks": [],
+  "stack": "heroku-18"
+}
