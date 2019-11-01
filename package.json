@@ -4,7 +4,7 @@
   "description": "Overwolf starter app",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel --public-url . src/*.html -d app/src",
+    "dev": "parcel src/*.html -d app/src",
     "build": "parcel --public-url . build src/*.html -d app/src"
   },
   "repository": {
@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/lmachens/warapp#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.18.2"
   },
   "dependencies": {
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "styled-components": "^4.4.1"
   }
 }
