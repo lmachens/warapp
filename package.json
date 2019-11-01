@@ -1,0 +1,28 @@
+{
+  "name": "warapp",
+  "version": "1.0.0",
+  "description": "Overwolf starter app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel --public-url . src/*.html -d app/src",
+    "build": "parcel --public-url . build src/*.html -d app/src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmachens/warapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmachens/warapp/issues"
+  },
+  "homepage": "https://github.com/lmachens/warapp#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}

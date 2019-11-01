@@ -2,7 +2,7 @@
     "manifest_version": 1,
     "type": "WebApp",
     "meta": {
-      "name": "Warapp",
+      "name": "Warapps",
       "version": "1.0.0",
       "minimum-overwolf-version": "0.120.0",
       "author": "neuefische",
@@ -32,21 +32,21 @@
       "start_window": "desktop",
       "windows": {
         "desktop": {
-          "file": "windows/desktop.html",
+          "file": "src/desktop.html",
           "native_window": true,
           "transparent": true,
           "resizable": true,
           "size": {
-            "width": 1212,
-            "height": 699
+            "width": 600,
+            "height": 400
           },
           "min_size": {
-            "width": 1212,
-            "height": 699
+            "width": 600,
+            "height": 400
           },
           "max_size": {
-            "width": 1212,
-            "height": 699
+            "width": 600,
+            "height": 400
           },
           "desktop_only": true
         }
