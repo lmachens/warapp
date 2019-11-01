@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel  --public-url . src/*.html -d app/src",
-    "build": "parcel --public-url . build src/*.html -d app/src"
+    "build-app": "parcel build --public-url . build src/*.html -d app/src",
+    "build-storybook": "build-storybook",
+    "build": "npm run build-app && npm run build-storybook",
+    "storybook": "start-storybook -p 6006"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,13 @@
   },
   "homepage": "https://github.com/lmachens/warapp#readme",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@storybook/addon-actions": "^5.2.5",
+    "@storybook/addon-links": "^5.2.5",
+    "@storybook/addons": "^5.2.5",
+    "@storybook/react": "^5.2.5",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-loader": "^8.0.6",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.18.2"
   },

@@ -1,0 +1,11 @@
+{
+  "name": "warapp",
+  "version": 2,
+  "builds": [
+    {
+      "src": "build-storybook.sh",
+      "use": "@now/static-build",
+      "config": { "distDir": "storybook-static" }
+    }
+  ]
+}
