@@ -4,7 +4,7 @@
   "description": "Overwolf starter app",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/*.html -d app/src",
+    "dev": "parcel  --public-url . src/*.html -d app/src",
     "build": "parcel --public-url . build src/*.html -d app/src"
   },
   "repository": {
