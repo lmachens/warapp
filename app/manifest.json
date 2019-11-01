@@ -24,6 +24,7 @@
       "type": "dedicated",
       "game_ids": [5426]
     },
+    "game_events": [5426],
     "launch_events": [
       {
         "event": "GameLaunch",
